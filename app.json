@@ -21,7 +21,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.yagouba.controlfer"
     },
     "web": {
       "favicon": "./app/assets/favicon.png"

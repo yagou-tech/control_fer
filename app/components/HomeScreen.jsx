@@ -248,7 +248,9 @@ const styles = StyleSheet.create({
     justifyContent: "flex-end",
   },
   buttonContainer: {
-    width: 320,
+    width: "90%",
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
 

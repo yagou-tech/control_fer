@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-const HistoriqueCard = ({ date, image, quantity }) => {
+const HistoriqueCard = ({ date, image, quantity, color }) => {
   return (
     <TouchableOpacity style={styles.card}>
       <View>
@@ -19,7 +19,7 @@ const HistoriqueCard = ({ date, image, quantity }) => {
           </View>
           <View style={styles.cardItem2}>
             <View style={styles.cardValid}>
-              <Ionicons name="shield-checkmark" size={30} color="black" />
+              <Ionicons name="shield-checkmark" size={30} color={color} />
             </View>
           </View>
         </View>

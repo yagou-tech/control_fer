@@ -34,7 +34,7 @@ const InformationScreen = ({ route }) => {
     if (step === 0) {
       return (
         <View style={styles.buttonContainer}>
-          <View style={styles.button}>
+          <View style={styles.button1}>
             <CustomButton 
               title="Passer"
               // onPress={handleLogin}
@@ -75,7 +75,7 @@ const InformationScreen = ({ route }) => {
     <View style={styles.container}>
       <View style={styles.progressBar}>
         <LinearProgress
-        style={{ marginVertical: 10 }}
+        style={{ marginVertical: 5 }}
         value={(step + 1) / 2}
         variant="determinate" color="#E31D1A" indeterminate={false} 
         />
@@ -97,10 +97,16 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     flexDirection: "row",
+    justifyContent: "space-between",
     marginTop: 10,
+    width: "90%",
+  },
+  button1: {
+    width: 160,
   },
   button: {
     width: 160,
+    marginEnd: 10,
   },
   progressBar: {
     width: "100%",

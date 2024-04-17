@@ -72,11 +72,11 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 26,
         fontWeight: "600",
-        color: " #000000B2",
+        color: 'rgba(0, 0, 0, 0.7)',
     },
     description: {
         fontSize: 15,
-        color: "#000000B2",
+        color: 'rgba(0, 0, 0, 0.7)',
     },
     item: {
         flexDirection: "row",

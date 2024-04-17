@@ -40,15 +40,18 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#000',
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   video: {
     flex: 1,
     width: '100%',
   },
   buttonContainer: {
-    width: "100%",
+    position: 'absolute',
+    bottom: 20,
+    alignItems: 'center',
+    width: "90%",
   },
 });
 

@@ -9,7 +9,7 @@ const PhoneNumberStep = ({ nextStep, prevStep }) => {
   return (
     <View>
       <Text style={styles.title}>Quel est votre N° de téléphone ?</Text>
-      <CustomInput placeholder="Nom d'utilisateur" icon={<FontAwesome name="microphone" size={24} color="black" />} iconPosition="right" />
+      <CustomInput placeholder="Ajouter votre numéro" icon={<FontAwesome name="microphone" size={24} color="black" />} iconPosition="right" />
       
       {/* <Button title="Précédent" onPress={prevStep} />
       <Button title="Suivant" onPress={nextStep} /> */}
