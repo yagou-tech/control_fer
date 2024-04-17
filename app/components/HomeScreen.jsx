@@ -7,12 +7,13 @@ import LeftMenu from './LeftMenu'; // Assurez-vous que le chemin d'accès est co
 import CustomInput from './utils/CustomInput';
 import InputGradeur from './utils/InputGradeur';
 import HistoriqueScreen from './HistoriqueScreen';
+import { useNavigation } from '@react-navigation/native';
 
-const HomeScreen = ({ navigation }) => {
+const HomeScreen = () => {
+  const navigation = useNavigation();
   // Fonction de gestion du bouton de validation
   const handleValidation = () => {
-    // Logique de validation
-    console.log('Validation effectuée');
+    navigation.navigate('LenghtScreen');
   };
 
   return (
@@ -34,7 +35,7 @@ const HomeScreen = ({ navigation }) => {
               </TouchableOpacity>
               {/* Icone de notification */}
               <TouchableOpacity style={styles.notificationIcon}>
-              <Ionicons name="notifications-outline" size={24} color="white" />
+                <Ionicons name="notifications-outline" size={24} color="white" />
                 {/* Cercle rouge */}
                 <View style={styles.notificationCircle} />
               </TouchableOpacity>
@@ -58,7 +59,7 @@ const HomeScreen = ({ navigation }) => {
               </View>
               <View style={styles.secondInput}>
                 <View style={styles.inputTitle}>
-                <MaterialCommunityIcons name="weight-gram" size={24} color="#00000060" />
+                  <MaterialCommunityIcons name="weight-gram" size={24} color="#00000060" />
                   <Text style={styles.grandeur1}>Poids</Text>
                 </View>
                 <View style={styles.inputItem}>
@@ -79,11 +80,11 @@ const HomeScreen = ({ navigation }) => {
           </View>
         </ImageBackground>
       </View>
-      
+
       {/* Partie inférieure */}
       <View style={styles.bottomContainer}>
         <Text style={styles.historyTitle}>Historique</Text>
-          <HistoriqueScreen />
+        <HistoriqueScreen />
         {/* Historique de vérification */}
         <View>
         </View>
@@ -122,7 +123,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingTop: 50,
   },
-  
+
   profile: {
     flexDirection: "row",
   },
@@ -215,7 +216,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     width: 154,
-    
+
   },
   input: {
     flex: 1,
